@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣诞婚礼 - 我们的幸福时刻</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 静音按钮 -->
+    <button class="mute-button">
+        <i class="fas fa-volume-up"></i>
+    </button>
+
+    <!-- 音频元素 -->
+    <audio id="bgMusic1" loop>
+        <source src="images/1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="bgMusic2" loop>
+        <source src="images/2.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- 弹幕容器 -->
+    <div class="danmaku-container"></div>
+    
+    <!-- 主页面横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Christmas & Wedding</h1>
+            <div class="signature-container">
+                <img src="images/wyr-removebg-preview.png" alt="Iris" class="avatar avatar-left">
+                <p class="signature">by Iris and Lccc</p>
+                <img src="images/lc-removebg-preview.png" alt="Lccc" class="avatar avatar-right">
+            </div>
+            <p class="wedding-date">2023年12月25日</p>
+            <div class="static-christmas-tree"></div>
+            <div class="envelope-container">
+                <div class="envelope">
+                    <div class="envelope-border"></div>
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-content">
+                        <div class="christmas-pattern"></div>
+                        <div class="envelope-text">圣诞快乐</div>
+                        <button class="open-button">打开信封</button>
+                    </div>
+                    <div class="letter">
+                        <img src="images/letter-image.png" alt="信件图片" class="letter-image">
+                    </div>
+                    <div class="envelope-back"></div>
+                    <div class="envelope-pattern"></div>
+                </div>
+            </div>
+            <div class="snow"></div>
+        </div>
+    </section>
+
+    <!-- 我们的故事 -->
+    <section id="story" class="story-section">
+        <h2>我很生气！</h2>
+        <div class="breakup-animation">
+            <div class="couple-container">
+                <img src="images/wyr-removebg-preview.png" alt="Iris" class="breakup-avatar breakup-left">
+                <div class="broken-heart">
+                    <div class="broken-heart-left"></div>
+                    <div class="broken-heart-right"></div>
+                </div>
+                <img src="images/lc-removebg-preview.png" alt="Lccc" class="breakup-avatar breakup-right">
+            </div>
+        </div>
+    </section>
+
+    <!-- 婚礼详情 -->
+    <section class="details-section" id="details">
+        <h2>其实我早就为你准备了礼物啊</h2>
+        <div class="gift-container">
+            <div class="gift-box left">
+                <h3>给他/她的礼物</h3>
+                <p>点击下方按钮，准备一份特别的礼物</p>
+                <button class="prepare-gift-btn">准备礼物</button>
+            </div>
+            <div class="gift-box right">
+                <h3>想对他/她说</h3>
+                <div class="message-input-container" style="display: none;">
+                    <textarea placeholder="在这里输入你想说的话..." class="message-input"></textarea>
+                    <button class="submit-message-btn">发送消息</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 照片集 -->
+    <section id="gallery" class="gallery-section">
+        <h2>其实我很爱你</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/photo1.jpg" alt="甜蜜合影1">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo2.jpg" alt="甜蜜合影2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo3.jpg" alt="甜蜜合影3">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo4.jpg" alt="甜蜜合影4">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo5.jpg" alt="甜蜜合影5">
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo6.jpg" alt="甜蜜合影6">
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP表单 -->
+    <section id="rsvp" class="rsvp-section">
+        <h2>朋友们的祝福</h2>
+        <form class="rsvp-form">
+            <div class="form-group">
+                <input type="text" id="sender-name" placeholder="您的姓名" required>
+            </div>
+            <div class="form-group">
+                <textarea id="blessing-message" placeholder="写下您的祝福..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">发送祝福</button>
+        </form>
+        <!-- 添加弹幕容器 -->
+        <div class="danmaku-container"></div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p><i class="fas fa-holly-berry"></i> Directed By Their Best Friend <i class="fas fa-candy-cane"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
