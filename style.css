@@ -1281,7 +1281,7 @@ body {
         transform: rotateY(180deg) translateX(0);
     }
     100% {
-        transform: rotateY(180deg) translateX(-200px);
+        transform: rotateY(180deg) translateX(-40px);
     }
 }
 
@@ -1290,7 +1290,7 @@ body {
         transform: rotateY(180deg) translateX(0);
     }
     100% {
-        transform: rotateY(180deg) translateX(200px);
+        transform: rotateY(180deg) translateX(40px);
     }
 }
 
@@ -1512,4 +1512,59 @@ body {
 
 .mute-button:hover i {
     color: #c41e3a;
+} 
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .avatar-left {
+        position: fixed;
+        left: calc(50% - 180px);  /* 调整水平位置 */
+        top: calc(50% - 60px);    /* 将图片放在日期下方 */
+    }
+
+    .avatar-right {
+        position: fixed;
+        left: calc(50% + 150px);   /* 调整水平位置 */
+        top: calc(50% - 60px);    /* 将图片放在日期下方 */
+    }
+    
+    .story-section {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .details-section {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .gallery-section {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .rsvp-section {
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .gift-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .gift-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 } 
